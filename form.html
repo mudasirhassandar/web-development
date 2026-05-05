@@ -1,0 +1,109 @@
+<!-- How to make form -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form method="post">
+      <div>
+        <label for="username">Full Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Enter Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Enter Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <div>
+        <label for="phonenumber">Phone Number</label>
+        <input
+          type="tel"
+          pattern="[0-9]{10}"
+          id="phonenumber"
+          name="phonenumber"
+          placeholder="Enter your phone number"
+        />
+      </div>
+
+      <div>
+        <p>Gender:</p>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">female</label>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </div>
+
+      <div>
+        <p>Hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby[]" value="reading" />
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobby[]" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="hobby[]" value="music" />
+        <label for="music">Music</label>
+        <input
+          type="checkbox"
+          id="travelling"
+          name="hobby[]"
+          value="travelling"
+        />
+        <label for="travelling">Travelling</label>
+      </div>
+      <div>
+        <label for="dateofbirth">Date of Birth</label>
+        <input type="date" id="dateofbirth" name="dateofbirth" />
+      </div>
+      <div>
+        <p>Course selection</p>
+        <select name="course" id="course" required>
+          <option value="">Select a course</option>
+          <option value="btech">Btech</option>
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+          <option value="mba">MBA</option>
+        </select>
+      </div>
+      <div>
+        <label for="address">Enter Your Address</label> <br />
+        <textarea
+          name="address"
+          id="address"
+          cols="30"
+          rows="4"
+          placeholder="Enter your address"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
