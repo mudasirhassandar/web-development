@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>child and descendent selectors</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      div > p {
+        color: aqua;
+      }
+      div > section > p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio saepe rem
+        expedita nihil voluptas! Est numquam itaque cumque dolorem aliquam nulla
+        dolore, optio velit quas, doloribus mollitia, debitis praesentium
+        reprehenderit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, nostrum.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis,
+        deleniti laboriosam quam mollitia ab itaque.
+      </p>
+    </div>
+    <div>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus
+          earum asperiores, culpa aperiam saepe eos id quibusdam aspernatur
+          tenetur, ipsam recusandae minima.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
