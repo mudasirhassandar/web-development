@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* *{
+            color: blueviolet;
+            border: 2px solid rgb(255, 0, 0);
+        } */
+/* .boxes *{
+            color: blueviolet;
+            border: 2px solid rgb(101, 41, 41);
+            padding: 3px;
+            margin: 5px;
+        } */
+/* .box:first-child{
+            background-color: aqua;
+        } 
+         .box:first-child::first-line{
+            color:red;
+        }
+         .box:first-line{
+            color:red;
+        } */
+/* attribute selector */
+/* [data-color="primary"]{
+            margin-top: 100px;
+            text-align: center; 
+         } */
+/* .box:nth-child(odd){
+            color: green;
+          } */
+/* .box:nth-last-child(1){
+        background-color: aqua;
+         
+   }*/
+/* INSERTING THE CONTENT THROUGH CSS */
+.boxes::before {
+  content: "Mudasir is better";
+  padding: 3px;
+  margin: 5px;
+}
+.boxes::after {
+  content: "Mudasir is good";
+  padding: 3px;
+  margin: 5px;
+}
+::selection {
+  color: rgb(5, 137, 181);
+  background-color: green;
+}
+.box::first-letter {
+  color: burlywood;
+}
+input::placeholder {
+  color: green;
+  text-transform: uppercase;
+}
